@@ -1,0 +1,95 @@
+/* BUTTON 1 */
+.btn1 {
+    width: 120px;
+    height: 40px;
+    background: #101720;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.btn1:hover {
+    background: #5080a0;
+    border-radius: 50%;
+}
+
+.btn1_text {
+    color: #f7f6f1;
+    transition: color 0.3s ease;
+}
+
+.btn1:hover .btn1_text {
+    color: red;
+}
+
+/* BUTTON 2 */
+.btn2 {
+    width: 120px;
+    height: 40px;
+    background: #d32f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.btn2_text {
+    color: #f7f6f1;
+    transition: color 0.3s ease;
+}
+
+.btn2:hover {
+    animation: rotateAndShadow 0.6s linear forwards, box-shadow-add 0.3s ease forwards;
+}
+
+@keyframes rotateAndShadow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes box-shadow-add {
+    0% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.btn2:hover .btn2_text {
+    color: #333;
+}
+
+
+/* BUTTON 3 */
+.btn3 {
+    width: 120px;
+    height: 40px;
+    background: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.btn3:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0;
+}
+
+.btn3_text {
+    color: #f7f6f1;
+    transition: color 0.3s ease;
+}
+
+.btn3:hover .btn3_text {
+    color: #333;
+}
