@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: inter;
+}
+
+.cont{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header{
+	width: 1320px;
+	display: flex;
+
+
+	.logo{
+		width: 25%;
+		background: lightsalmon;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	nav{
+		width: 50%;
+
+		background: pink;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.social{
+		width: 25%;
+
+		background: lightcoral;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.burger{
+		width: 24px;
+		height: 24px;
+		background: grey;
+
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 1400px){
+	header{
+		width: 1140px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	header{
+		width: 960px;
+
+		nav{
+			width: 75%;
+		}
+
+		.social{
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 992px){
+	header{
+		width: 720px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	// header{
+	// 	width: 540px;
+	// 	display: block;
+
+	// 	.logo{
+	// 		width: 100%;
+	// 	}
+
+	// 	nav{
+	// 		width: 100%;
+	// 	}
+	// }
+
+	header{
+		width: 540px;
+		justify-content: space-between;
+		align-items: center;
+
+		nav{
+			display: none;
+		}
+		.burger{
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width: 576px){
+	header{
+		width: 100%;
+	}
+}
