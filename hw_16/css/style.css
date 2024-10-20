@@ -1,0 +1,33 @@
+.header_btn{
+    height: 50%;
+}
+
+.header_btn  p{
+    margin-bottom: 1rem; 
+    margin-top: 1rem;
+}
+
+
+
+.cards{
+    width: 100%;
+}
+
+
+.contacts{
+    width: fit-content;
+}
+
+.contacts .social svg{
+    width: 25px;
+}
+
+.map{
+    width: 500px;
+}
+
+@media screen and (max-width: 767px) {
+    .main_content img{
+        width: 100% !important;
+    }
+} 
